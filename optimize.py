@@ -71,7 +71,7 @@ nms_postprocess(config_path="nms_config.json", meta_arch=yolov8, engine=cpu)
 runner.load_model_script(model_script)
 
 # ==================== Optimize ====================
-print("=== Optimize 시작 (CPU라 시간 좀 걸림) ===")
+print("=== Optimize 시작  ===")
 runner.optimize(calib)
 runner.save_har("./yolov11_quantized.har")
 print("=== Optimize 완료 ===")
